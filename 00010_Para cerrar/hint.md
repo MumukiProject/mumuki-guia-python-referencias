@@ -4,7 +4,7 @@ Al desarrollar `PianoFamiliar` tenés la libertad de elegir cómo hacer para que
 
 Y para que la afinación no se pase de 100 te puede servir el mensaje `min` que entienden las colecciones, y devuelve en nuestro caso el menor número:
 
-```ruby
+```python
 ム [17, 10].min
 => 10
 ```

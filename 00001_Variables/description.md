@@ -1,13 +1,13 @@
-Hasta ahora, en objetos, un programa es simplemente una secuencia de envíos de mensajes. Por ejemplo, éste es un programa que convierte en mayúsculas al string `"hola"`. 
+Hasta ahora, en objetos, un programa es simplemente una secuencia de envíos de mensajes. Por ejemplo, éste es un programa que convierte en mayúsculas al string `"hola"`.
 
-```ruby
+```python
 ム "hola".upcase
 => "HOLA"
 ```
 
 Sin embargo, podemos hacer algo más: declarar variables. Por ejemplo, podemos declarar una variable `saludo`, inicializarla con `"hola"`, enviarle mensajes...
 
-```ruby
+```python
 ム saludo = "hola"
 ム saludo.upcase
 => "HOLA"
