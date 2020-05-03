@@ -10,7 +10,7 @@ Sucede que hay muchos tipos de referencias, y una de ellas son las variables del
 saludo.upcase.size
 ```
 
-¡Simple! Cuando enviamos mensajes a objetos literales como el `2`, el `true` u `"hola"`, o expresiones, estamos conociendo a esos objetos a través de _referencias implícitas_, que son **temporales** (sólo existen durante ese envío de mensajes) y **anónimas** (no tienen un nombre asociado).
+¡Simple! Cuando enviamos mensajes a objetos literales como el `2`, el `True` u `"hola"`, o expresiones, estamos conociendo a esos objetos a través de _referencias implícitas_, que son **temporales** (sólo existen durante ese envío de mensajes) y **anónimas** (no tienen un nombre asociado).
 
 ```python
 "ni hao".upcase

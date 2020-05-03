@@ -1,50 +1,50 @@
-before do
+before:
   Lucio.afinar(PianoFamiliar, 20)
-end
 
-it "El PianoFamiliar está inicialmente afinado" do
-  expect(PianoFamiliar.esta_afinado?).to be true
-end
 
-it "Lucio sabe afinar el piano" do
+def test_"El PianoFamiliar está inicialmente afinado":
+  expect(PianoFamiliar.esta_afinado?).to be True
+
+
+def test_"Lucio sabe afinar el piano":
   Lucio.afinar(PianoFamiliar, 3)
-  expect(PianoFamiliar.esta_afinado?).to be true
-end
+  expect(PianoFamiliar.esta_afinado?).to be True
 
-it "Inicialmente Jazmín no tiene un piano" do
+
+def test_"Inicialmente Jazmín no tiene un piano":
   expect { Jazmin.tocar }.to raise_error
-end
 
-it "Después de tocar el piano 23 veces, y afinarlo durante una hora, está afinado" do
-  Jazmin.piano=(PianoFamiliar)  
+
+def test_"Después de tocar el piano 23 veces, y afinarlo durante una hora, está afinado":
+  Jazmin.piano=(PianoFamiliar)
   23.times { Jazmin.tocar }
   Lucio.afinar(PianoFamiliar, 1)
-  expect(PianoFamiliar.esta_afinado?).to be true
-end
+  expect(PianoFamiliar.esta_afinado?).to be True
 
-it "Después de tocar el piano 23 veces, ya no está afinado" do
-  Jazmin.piano=(PianoFamiliar)  
+
+def test_"Después de tocar el piano 23 veces, ya no está afinado":
+  Jazmin.piano=(PianoFamiliar)
   23.times { Jazmin.tocar }
-  expect(PianoFamiliar.esta_afinado?).to be false
-end
+  expect(PianoFamiliar.esta_afinado?).to be False
 
-it "Después de tocar el piano 90 veces, y afinarlo durante una hora, no está afinado" do
-  Jazmin.piano=(PianoFamiliar)  
+
+def test_"Después de tocar el piano 90 veces, y afinarlo durante una hora, no está afinado":
+  Jazmin.piano=(PianoFamiliar)
   90.times { Jazmin.tocar }
   Lucio.afinar(PianoFamiliar, 1)
-  expect(PianoFamiliar.esta_afinado?).to be false
-end
+  expect(PianoFamiliar.esta_afinado?).to be False
 
-it "Después de tocar el piano 90 veces, y afinarlo durante 20 horas, está afinado" do
-  Jazmin.piano=(PianoFamiliar)  
+
+def test_"Después de tocar el piano 90 veces, y afinarlo durante 20 horas, está afinado":
+  Jazmin.piano=(PianoFamiliar)
   90.times { Jazmin.tocar }
   Lucio.afinar(PianoFamiliar, 20)
-  expect(PianoFamiliar.esta_afinado?).to be true
-end
+  expect(PianoFamiliar.esta_afinado?).to be True
 
-it "La afinación máxima es 100 aunque afine el piano durante 743 horas" do
+
+def test_"La afinación máxima es 100 aunque afine el piano durante 743 horas":
   Lucio.afinar(PianoFamiliar, 743)
-  Jazmin.piano=(PianoFamiliar)  
+  Jazmin.piano=(PianoFamiliar)
   90.times { Jazmin.tocar }
-  expect(PianoFamiliar.esta_afinado?).to be false
-end
+  expect(PianoFamiliar.esta_afinado?).to be False
+

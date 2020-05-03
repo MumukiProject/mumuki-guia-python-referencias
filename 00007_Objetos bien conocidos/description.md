@@ -2,19 +2,19 @@
 
 ```python
 module Fito
-  @felicidad = 100
+  self.felicidad = 100
 
-  def self.comer(calorias)
-     @felicidad += calorias * 0.001
-  end
+  def self.comer(self, calorias):
+     self.felicidad += calorias * 0.001
 
-  def self.felicidad
-    @felicidad
-  end
-end
+
+  def self.felicida(self):
+    self.felicidad
+
+
 ```
 
-A objetos como `Fito` se los conocen como _objetos bien conocidos_: cuando los declaramos no sólo describimos su comportamiento (`comer(calorias)` y `felicidad`) y estado (`@felicidad`), sino que además les damos un nombre o etiqueta a través de la cual podemos conocerlos. ¿Te suena?
+A objetos como `Fito` se los conocen como _objetos bien conocidos_: cuando los declaramos no sólo describimos su comportamiento (`comer(calorias)` y `felicidad`) y estado (`self.felicidad`), sino que además les damos un nombre o etiqueta a través de la cual podemos conocerlos. ¿Te suena?
 
 ¡Adiviná! Esas etiquetas también son referencias :tada:. Y son globales, es decir que cualquier objeto o **programa** puede utilizarla.
 

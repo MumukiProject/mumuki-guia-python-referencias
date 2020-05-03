@@ -1,3 +1,2 @@
-it "despedida apunta a ""adiós"""  do
+def test_"despedida apunta a ""adiós""" :
   expect(despedida).to eq "adiós"
-end

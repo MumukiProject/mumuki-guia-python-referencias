@@ -1,19 +1,18 @@
-it "La nieta de AbueloGervasio es Melisa" do
+def test_"La nieta de AbueloGervasio es Melisa":
   expect(AbueloGervasio.nieta).to be Melisa
-end
 
-it "La novia de Fito es Melisa" do
+
+def test_"La novia de Fito es Melisa":
   expect(Fito.novia).to be Melisa
-end
 
-it "Melisa aumentó su felicidad" do
-  expect(Melisa.felicidad > 100).to be true
-end
 
-it "Fito es feliz porque Melisa es feliz" do
-  expect(Fito.es_feliz_como_su_novia?).to be true
-end
+def test_"Melisa aumentó su felicidad":
+  expect(Melisa.felicidad > 100).to be True
 
-it "AbueloGervasio alimentó 3 veces a Melisa" do
+
+def test_"Fito es feliz porque Melisa es feliz":
+  expect(Fito.es_feliz_como_su_novia?).to be True
+
+
+def test_"AbueloGervasio alimentó 3 veces a Melisa":
   expect(AbueloGervasio.veces_alimentada).to eq 3
-end

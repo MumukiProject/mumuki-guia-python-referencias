@@ -8,18 +8,18 @@ despedida = otro_saludo # se crea la variable despedida que, por asignarle la re
 
 ```python
 ム "buen día".equal? "buen día"
-=> false
+=> False
 ム despedida.equal? "buen día"
-=> false
+=> False
 ```
 
-En ambos casos el resultado fue `false`, dado que aquellos strings son objetos **distintos**, a pesar de que tengan los mismos caracteres. Cada vez que escribimos un string estamos creando un nuevo objeto. Sin embargo:
+En ambos casos el resultado fue `False`, dado que aquellos strings son objetos **distintos**, a pesar de que tengan los mismos caracteres. Cada vez que escribimos un string estamos creando un nuevo objeto. Sin embargo:
 
 ```python
 ム otro_saludo.equal? otro_saludo
-=> true
+=> True
 ム despedida.equal? otro_saludo
-=> true
+=> True
 ```
 
 ¿Por qué? ¡Simple! Ambas referencias, `otro_saludo` y `despedida`, apuntan al mismo objeto. La moraleja es que declarar una variable significa agregar una nueva referencia al objeto existente, en lugar de copiarlo:

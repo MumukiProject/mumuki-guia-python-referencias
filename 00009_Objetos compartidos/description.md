@@ -2,16 +2,16 @@
 
 ```python
 module Fito
-  @novio
+  self.novio
 
-  def self.novia=(una_novia)
-    @novia = un_novia
-  end
+  def self.novia=(self, una_novia):
+    self.novia = un_novia
+
 
   def self.es_feliz_como_su_novia?
-    @novia.felicidad > 105
-  end
-end
+    self.novia.felicidad > 105
+
+
 ```
 
 > Escribí un programa que inicialice la `novia` de `Fito` y a la `nieta` de `AbueloGervasio` de forma que ambos conozcan al mismo objeto (`Melisa`).

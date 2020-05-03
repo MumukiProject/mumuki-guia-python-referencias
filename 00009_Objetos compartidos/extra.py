@@ -1,50 +1,49 @@
 module Melisa
-  @felicidad = 100
-  
-  def self.comer(calorias)
-    @felicidad += calorias * 0.5
-  end
-  
-  def self.felicidad
-    @felicidad
-  end
-end
+  self.felicidad = 100
+
+  def self.comer(self, calorias):
+    self.felicidad += calorias * 0.5
+
+
+  def self.felicida(self):
+    self.felicidad
+
+
 
 module Fito
-  @novia
-   
-  def self.novia=(un_novia)
-    @novia = un_novia
-  end
-  
-  def self.novia
-    @novia
-  end
-  
+  self.novia
+
+  def self.novia=(self, un_novia):
+    self.novia = un_novia
+
+
+  def self.novi(self):
+    self.novia
+
+
   def self.es_feliz_como_su_novia?
-    @novia.felicidad > 105
-  end
-end
+    self.novia.felicidad > 105
+
+
 
 module AbueloGervasio
-  @nieta
-  @veces_alimentada = 0
-  
-  def self.alimentar_nieta
-    @veces_alimentada += 1
-    @nieta.comer(2000)
-    @nieta.comer(1000)
-  end
-  
-  def self.nieta=(un_nieta)
-    @nieta = un_nieta
-  end
-  
-  def self.nieta
-    @nieta
-  end
-  
-  def self.veces_alimentada
-    @veces_alimentada
-  end
-end
+  self.nieta
+  self.veces_alimentada = 0
+
+  def self.alimentar_niet(self):
+    self.veces_alimentada += 1
+    self.nieta.comer(2000)
+    self.nieta.comer(1000)
+
+
+  def self.nieta=(self, un_nieta):
+    self.nieta = un_nieta
+
+
+  def self.niet(self):
+    self.nieta
+
+
+  def self.veces_alimentad(self):
+    self.veces_alimentada
+

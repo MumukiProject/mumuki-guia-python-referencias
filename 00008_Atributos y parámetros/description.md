@@ -4,12 +4,12 @@ Por ejemplo, si la golondrina `Pepita` conoce siempre su ciudad actual...
 
 ```python
 module Pepita
-  @ciudad
+  self.ciudad
 
-  def self.ciudad=(una_ciudad)
-      @ciudad = una_ciudad
-  end
-end
+  def self.ciudad=(self, una_ciudad):
+      self.ciudad = una_ciudad
+
+
 ```
 
 Y en algún momento esta pasa a ser `Iruya`, el diagrama de objetos será el siguiente:
